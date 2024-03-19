@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            /* background-color: darkgoldenrod;
+            border: 2px black; */
+        }
+       
+        nav h3{
+            font-size: x-large;
+            color: red;
+            margin-top: 20px;
+            /* background-color: aqua; */
+        }
+        .main {
+            position: relative;
+            bottom: 40px;
+            left: 60%;
+            /* background-color: blue; */
+            width: 600px;
+    
+        }
+        .main a{
+            margin-left: 50px ;
+            font-size: x-large;
+            text-decoration: none;
+            color: black;
+        }
+       
+        .gallary img{
+            /* background-color: darkgreen; */
+            width: 100%;
+            height:600px;
+            filter: contrast(120%);
+            filter: drop-shadow(0px 0px 20px black);
+            /* translate: translate(-50% , -50%); */
+        }
+        .gallary h1{
+            font-size: 50px;
+            color: white;
+            font-weight: bolder;
+            position: relative;
+            bottom: 200px;
+            margin-left: 100px;
+        }
+        .nav2{
+            /* background-color: red; */
+            width: 800px;
+            height: 70px;
+            position: relative;
+            left: 30%;
+            bottom: 650px;
+            
+        }
+        .nav2 a{
+            margin-left: 15px;
+            padding: 10px;
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            font-size: 20px;
+        }
+        .search{
+            /* background-color: gold; */
+            width: 200px;
+            position: relative;
+            left: 350px;
+            bottom: 15px;
+            /* height: 10px;
+            text-align: center; */
+        }
+        .search input{
+            height: 50px;
+            text-align: center;
+            color:  white;
+            font-weight: bold;
+            border-radius: 50px;
+            border-color: white;
+            /* background-color: blueviolet; */
+        }
+        .search input:hover{
+            background-color: #D31145;
+        }
+        .search i{
+       color:white;
+       font-size: 30px;
+       position: relative;
+       left: 230px;
+       bottom: 40px;
+    }
+    .had2{
+        position: relative;
+        bottom: 50px;
+    }
+    .had2 h1{
+        margin-left: 300px;
+        font-weight: bolder;
+        font-size: 70px;
+        color:#D31145;
+    }
+    .name{
+        margin-left: 200px;
+        font-size: 25px;
+        font-weight: bold;
+        color: #D31145;
+    }
+    .name input{
+        position: relative;
+        bottom: 20px;
+        border-color: #D31145;
+        width: 400px;
+    }
+    .email{
+        margin-left: 200px;
+        font-size: 25px;
+        font-weight: bold;
+        color: #D31145;
+    }
+    .email input{
+        position: relative;
+        bottom: 0px;
+        border-color: #D31145;
+        width: 800px;
+    }
+    .number{
+        margin-left: 200px;
+        font-size: 25px;
+        font-weight: bold;
+        color: #D31145;
+    }
+    .number input{
+        position: relative;
+        right: 240px;
+        top: 40px;
+        border-color: #D31145;
+        width: 400px;
+    }
+    .state{
+        margin-left: 200px;
+        margin-top: 80px;
+        font-size: 25px;
+        font-weight: bold;
+        color: #D31145;
+    }
+    .state select{
+        position: relative;
+        right: 80px;
+        top: 40px;
+        border-color: #D31145;
+        width: 400px;
+    }
+    .check{
+        margin-left: 200px;
+        margin-top: 120px;
+        font-size: 20px;
+        font-weight: bold;
+        color: #D31145;
+    }
+    .check input{
+        position: relative;
+        right: 20px;
+        top: 0px;
+        border-color: #D31145;
+        width: 40px;
+    }
+    button{
+        /* background-color: blue; */
+        position: relative;
+        top: 50px;
+        left: 50%;
+        width: 100px;
+        height: 40px;
+        border: none;
+        background-color: #D31145;
+        font-size: larger;
+        color: white;
+    }
+    .connect{
+        /* background-color: blueviolet; */
+        position: relative;
+        top: 100px;
+        left: 200px;
+        width: 600px;
+    }
+    .connect h1{
+        font-size: 50px;
+        font-weight: bolder;
+        color: #D31145;
+    }
+    .footer{
+    background-image: url('https://i.pinimg.com/564x/22/8e/32/228e326f9e58d22aad49abcf29650757.jpg');
+    /* background-color: #24262b; */
+    padding: 70px;
+    position: relative;
+    top: 200px;
+   }
+   .footer-coln{
+     width: 25%;
+     padding: 0 15px;
+   }
+   .footer-coln h4{
+    font-size: 18px;
+    color: #ffffff;
+    margin-bottom: 30px;
+    
+    font-weight: bolder;
+    text-decoration: underline;
+
+   }
+   .contenters{
+    max-width: 1170px;
+    /* background-color: red; */
+    margin: auto;
+   }
+   .row2{
+    display: flex;
+    flex-wrap: wrap;
+   }
+   ul{
+    list-style: none;
+   }
+   ul a{
+    color: white;
+    font-size: larger;
+    text-decoration: none;
+   }
+   .social i{
+    color: white;
+    font-size: larger;
+    margin-left: 10px;
+   }
+   
+    </style>
+</head>
+<body>
+    <nav>
+        <h3> <i class="fa fa-globe" aria-hidden="true"></i> Cafe's Global</h3>
+        
+        <!-- for navigation -->
+ 
+        <div class="main">
+        <a href="">Login</a>
+        <a href="">Register</a>
+        <a href="">Our Family</a>
+        <a href="">Contact</a>
+     </div>
+     </nav>
+     <div class="gallary">
+         <img src="cupcake.jpg" alt="1">
+         <h1>CONTACT US</h1>
+        </div>
+ 
+     <!-- for 2nd navigation bar -->
+ 
+     <div class="nav2">
+         <a href="our.html">OUR PRODUCTS</a>
+         <a href="buisness.html">OUR BUSINESS</a>
+         <a href="story.html">OUR STORY</a>
+         <a href="">GET IN TOUCH</a>
+ 
+         <div class="search">
+            <form class="search">
+        <input type="search" placeholder="WHERE TO BUY">
+        <i  class="fa fa-search" aria-hidden="true"></i>
+    </form>
+</div>
+</div>
+<div class="had2">
+    <h1>BECOME A CUSTOMER</h1>
+</div>
+<form action="">
+    <div class="name">
+    <label>NAME</label> <br> <br>
+    <input  type="text" placeholder="Name">
+  <input  type="text" placeholder="Last Name ">
+</div>
+<div class="email">
+  <label for="" >EMAIL</label> <br> 
+  <input type="email" required>
+</div>
+<div class="number">
+    <label for="">CONTACT NUMBER</label>
+    <input type="number" required>
+</div>
+<div class="state">
+    <label for="">STATE</label>
+       <select name="select" id="">
+        <option value="">SELECT</option>
+        <option value="">PUNJAB</option>
+        <option value="">MADHYA PRADESH</option>
+        <option value="">MAHARASHTRA</option>
+    
+    </select>
+</div>
+<div class="check">
+    <input type="checkbox" name="" id="">
+    <label for="">I CONSENT TO RECEIVE WHATSAPP COMMUNICATIONS</label> <br>
+    <input type="checkbox" name="" id="">
+    <label for="">I AGREE TO TERMS AND PRIVACY POLICY*</label> <br>
+    <input type="checkbox" name="" id="">
+    <label for="">I CONSENT TO RECEIVE CAFE'S COMMUNICATIONS</label>
+</div>
+<button>SUBMIT</button>
+</form>
+
+<div class="connect">
+    <h1>CONTACT CAFE'S INDIA</h1>
+    <img src="https://www.richs.in/wp-content/uploads/2020/01/phone.svg" alt="">
+    <h5 style="position: relative;bottom: 20px;left: 20px;">Tel: 1000 666 9221</h5>
+    <img src="https://www.richs.in/wp-content/uploads/2020/01/Mail.svg" alt="">
+    <h5 style="position: relative;bottom: 22px;left: 20px;">Email: xxxxxx@xxx.com</h5>
+</div>
+<footer class="footer">
+    <div class="contenters">
+        <div class="row2">
+            <div class="footer-coln">
+                <h4>COMPANY</h4>
+                <ul>
+                    <li><a href="">about us</a></li>
+                    <li><a href="">our services</a></li>
+                    <li><a href="">privacy policy</a></li>
+                    <li><a href="">affilate program</a></li>
+                </ul>
+            </div>
+            <div class="footer-coln">
+                <h4>GET HELP</h4>
+                <ul>
+                    <li><a href="">FAQ</a></li>
+                    <li><a href="">shipping</a></li>
+                    <li><a href="">returns</a></li>
+                    <li><a href="">order status</a></li>
+                    <li><a href="">payment option</a></li>
+                </ul>
+            </div>
+            <div class="footer-coln">
+                <h4>BUY NOW</h4>
+                <ul>
+                    <li><a href="">Cake Icing</a></li>
+                    <li><a href=""> Sweet Starters</a></li>
+                    <li><a href=""> Deserts</a></li>
+                    <li><a href=""> Beverages</a></li>
+                </ul>
+            </div>
+            <div class="footer-coln">
+                <h4>Follow US</h4>
+                <div class="social">
+                <a href=""><i  class="fa fa-facebook-official" aria-hidden="true"></i></a>
+               <a href=""><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
+               <a href=""><i class="fa fa-instagram" aria-hidden="true"></i></a>
+               <a href=""><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
+              
+                 
+            </div>
+            </div>
+           
+        </div>
+    </div>
+     
+</footer>
+</body>
+</html>

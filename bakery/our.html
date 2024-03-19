@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <title>Document</title>
+    <style>
+        *{
+        margin: 0px;
+        padding: 0px;
+        /* background-color: darkgoldenrod;
+        border: 2px black; */
+    }
+   
+    nav h3{
+        font-size: x-large;
+        color: red;
+        margin-top: 20px;
+        /* background-color: aqua; */
+    }
+    .main {
+        position: relative;
+        bottom: 40px;
+        left: 60%;
+        /* background-color: blue; */
+        width: 600px;
+
+    }
+    .main a{
+        margin-left: 50px ;
+        font-size: x-large;
+        text-decoration: none;
+        color: black;
+    }
+   
+    .gallary img{
+        /* background-color: darkgreen; */
+        width: 100%;
+        height:600px;
+        filter: contrast(120%);
+        filter: drop-shadow(0px 0px 20px black);
+        /* translate: translate(-50% , -50%); */
+    }
+    .gallary h1{
+        font-size: 50px;
+        color: white;
+        font-weight: bolder;
+        position: relative;
+        bottom: 200px;
+        margin-left: 100px;
+    }
+    .nav2{
+        /* background-color: red; */
+        width: 700px;
+        height: 70px;
+        position: relative;
+        left: 30%;
+        bottom: 650px;
+        
+    }
+    .nav2 a{
+        margin-left: 15px;
+        padding: 10px;
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+        font-size: 20px;
+    }
+    .search{
+        /* background-color: gold; */
+        width: 200px;
+        position: relative;
+        left: 350px;
+        bottom: 15px;
+        /* height: 10px;
+        text-align: center; */
+    }
+    .search input{
+        height: 50px;
+        text-align: center;
+        color:  white;
+        font-weight: bold;
+        border-radius: 50px;
+        border-color: white;
+        /* background-color: blueviolet; */
+    }
+    .search input:hover{
+        background-color: #D31145;
+    }
+    .search i{
+       color:white;
+       font-size: 30px;
+       position: relative;
+       left: 230px;
+       bottom: 40px;
+    }
+    .had2 h1{
+        margin-left: 100px;
+        font-weight: bold;
+        color: red;
+    }
+    .pic .sub img{
+        display: inline-block;
+        width: 350px;
+        height: 350px;
+        margin-top: 80px;
+        margin-left: 110px;
+        /* border-radius: 20px; */
+    }
+    /* .pic .sub img:hover{
+       transform: scale(1.1);
+    } */
+    .sub2{
+        display: inline-block;
+        
+    }
+    .sub2 a{
+        text-decoration: none;
+        font-size: 25px;
+        font-weight: bolder;
+        color: black;
+        filter: drop-shadow(10px 10px 10px black);
+
+        /* position: relative;
+        bottom: 550px;
+        margin-left: 120px;
+        margin-top: 200px; */
+    }
+    .sub2 a:hover{
+        animation-name: s1;
+        animation:zoomIn ;
+        animation-duration: 3s;
+    }
+    .gal{
+        margin-left: 100px;
+    }
+    .row{
+        /* background-color: #D31145; */
+    width: 800px;
+    position: relative;
+    left: 720px;
+    bottom: 450px;
+    border: none;
+   }
+   .card-body h4{
+    width: 400px;
+    font-size: 72px;
+    font-family: Brush Script MT;
+   }
+   .card-body p{
+    font-size: 20px;
+   }
+   .footer{
+    background-image: url('https://i.pinimg.com/564x/22/8e/32/228e326f9e58d22aad49abcf29650757.jpg');
+    /* background-color: #24262b; */
+    padding: 70px;
+   }
+   .footer-coln{
+     width: 25%;
+     padding: 0 15px;
+   }
+   .footer-coln h4{
+    font-size: 18px;
+    color: #ffffff;
+    margin-bottom: 30px;
+    
+    font-weight: bolder;
+    text-decoration: underline;
+
+   }
+   .contenters{
+    max-width: 1170px;
+    /* background-color: red; */
+    margin: auto;
+   }
+   .row2{
+    display: flex;
+    flex-wrap: wrap;
+   }
+   ul{
+    list-style: none;
+   }
+   ul a{
+    color: white;
+    font-size: larger;
+    text-decoration: none;
+   }
+   .social i{
+    color: white;
+    font-size: larger;
+    margin-left: 10px;
+   }
+   .like{
+    position: relative;
+    bottom: 250px;
+    margin-left: 200px;
+   }
+   .like h1{
+    color: #D31145;
+    font-weight: bolder;
+    font-size: 70px;
+    width: 1000px;
+   }
+   .like button{
+    background-color: #D31145;
+    font-size: 20px;
+    color: white;
+    margin-top: 50px;
+    margin-left: 40px;
+    width: 350px;
+    height: 50px;
+    border: none;
+   }
+   @media only screen and (max-width:600px) {
+    
+   }
+    
+   
+    </style>
+</head>
+<body>
+    <nav>
+        <h3> <i class="fa fa-globe" aria-hidden="true"></i> Cafe's Global</h3>
+        
+        <!-- for navigation -->
+ 
+        <div class="main">
+        <a href="">Login</a>
+        <a href="">Register</a>
+        <a href="">Our Family</a>
+        <a href="">Contact</a>
+     </div>
+     </nav>
+     <div class="gallary">
+         <img src="https://i.pinimg.com/564x/4f/54/45/4f544580b254be4d9ca2d0b9682450c2.jpg" alt="1">
+         <h1>DARE TO DREAM</h1>
+        </div>
+ 
+     <!-- for 2nd navigation bar -->
+ 
+     <div class="nav2">
+         <a href="our.html">OUR PRODUCTS</a>
+         <a href="buisness.html">OUR BUSINESS</a>
+         <a href="story.html">OUR STORY</a>
+         <a href="get.html">GET IN TOUCH</a>
+ 
+         <div class="search">
+                 <form class="search">
+             <input type="search" placeholder="WHERE TO BUY">
+             <i class="fa fa-search" aria-hidden="true"></i>
+         </form>
+     </div>
+     </div>
+      <div class="had2">
+        <h1>EXPLORE OUR PRODUCTS</h1>
+        <div class="pic">
+            <div class="sub">
+                <img src="https://www.richs.in/wp-content/uploads/2020/02/cake-icings-and-sweet-starters-tile.jpg" alt="1">
+                <img src="https://www.richs.in/wp-content/uploads/2020/02/culinary-solutions-tile.jpg" alt="2">
+                <img src="https://www.richs.in/wp-content/uploads/2020/02/beverages-and-finishing-touches.jpg" alt="3">
+                <img src="https://www.richs.in/wp-content/uploads/2020/03/Chocolate-Solutions-2.jpg" alt="">
+                <img src="https://www.richs.in/wp-content/uploads/2020/02/Gels-Glazes-Tile-5.jpg" alt="">
+                <img src="https://www.richs.in/wp-content/uploads/2020/03/Fruit-Filling-Category-IN.jpg" alt="">
+            </div>
+         <div style="position: relative;bottom: 530px;left: 120px;"  class="sub2 a1"> <a href="">CAKE ICINGS & SWEET <br> STARTERS</a> </div>
+        <div style="position: relative;bottom: 540px;left: 320px;" class="sub2 a2"> <a href=""> CULINARY SOLUTION</a></div>
+        <div style="position: relative;bottom: 530px;left: 520px;" class="sub2 a3"> <a href="">BEVERAGES & <br> FINISHING TOUCHES </a></div>
+        <div style="position: relative;bottom: 100px;left: -660px;" class="sub2 a3"> <a href=""> TRUFFLE SOLUTION</a></div>
+        <div style="position: relative;bottom: 100px;left: -400px;" class="sub2 a3"> <a href="">GELS,GLAZES & FRUIT <br> FILLING </a></div>
+        <div style="position: relative;bottom: 100px;left: -200px;" class="sub2 a3"> <a href=""> DESERTS</a></div>
+       
+    </div>
+      </div>
+      <div class="gal"><img src="https://www.richs.in/wp-content/uploads/2020/09/IceHot_Beverage-575-x-493.png" alt=""></div>
+      <div class="row">
+        <div class="col-sm-6 mb-3 mb-sm-0">
+          <div class="card">
+            <div class="card-body">
+              <h4 class="card-title">We are the all-in-one bevrages mix</h4>
+              <p class="card-text">A unique ingredient that allows you to perfectly <br> customize your hot & cold bevrages</p>
+              <a style="background-color: #D31145; border: none;" href="#" class="btn btn-primary">DISCOVER MORE</a>
+            </div>
+          </div>
+        </div>
+      </div>
+        <div class="like"><h1>WHAT WOULD YOU</h1>
+        <h1>LIKE TO DO NEXT?</h1>
+       <button>SEE OUR PRODUCTS</button>
+       <button>GET TO KNOW RICH'S</button>
+       <button>GET IN TOUCH</button>
+    </div>
+
+      <footer class="footer">
+        <div class="contenters">
+            <div class="row2">
+                <div class="footer-coln">
+                    <h4>COMPANY</h4>
+                    <ul>
+                        <li><a href="">about us</a></li>
+                        <li><a href="">our services</a></li>
+                        <li><a href="">privacy policy</a></li>
+                        <li><a href="">affilate program</a></li>
+                    </ul>
+                </div>
+                <div class="footer-coln">
+                    <h4>GET HELP</h4>
+                    <ul>
+                        <li><a href="">FAQ</a></li>
+                        <li><a href="">shipping</a></li>
+                        <li><a href="">returns</a></li>
+                        <li><a href="">order status</a></li>
+                        <li><a href="">payment option</a></li>
+                    </ul>
+                </div>
+                <div class="footer-coln">
+                    <h4>BUY NOW</h4>
+                    <ul>
+                        <li><a href="">Cake Icing</a></li>
+                        <li><a href=""> Sweet Starters</a></li>
+                        <li><a href=""> Deserts</a></li>
+                        <li><a href=""> Beverages</a></li>
+                    </ul>
+                </div>
+                <div class="footer-coln">
+                    <h4>Follow US</h4>
+                    <div class="social">
+                    <a href=""><i  class="fa fa-facebook-official" aria-hidden="true"></i></a>
+                   <a href=""><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
+                   <a href=""><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                   <a href=""><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
+                  
+                     
+                </div>
+                </div>
+               
+            </div>
+        </div>
+         
+    </footer>
+</body>
+</html>
